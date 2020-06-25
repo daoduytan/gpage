@@ -1,0 +1,20 @@
+.print {
+  display: none;
+}
+
+@media print {
+  .print {
+    font-size: 12px;
+    display: block;
+    max-width: 595px;
+    width: 100%;
+    margin: 30px;
+    border: 1px solid #000;
+  }
+
+  .row {
+    border-top: 1px dashed #000;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
